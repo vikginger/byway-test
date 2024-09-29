@@ -1,0 +1,38 @@
+.root {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.input {
+  width: size(300);
+  height: size(44);
+  padding: size(10);
+  border: 1px solid $lightGray;
+  border-radius: size(8);
+  outline: none;
+  background-color: $white;
+  font-size: size(14);
+  font-weight: 400;
+  line-height: size(21);
+  color: $darkBlue;
+
+  &::placeholder {
+    color: $darkBlue;
+  }
+}
+
+.btn {
+  position: absolute;
+  top: size(10);
+  right: size(10);
+  width: size(24);
+  height: size(24);
+
+  &Icon {
+    width: 100%;
+    height: 100%;
+    color: $white;
+  }
+}

@@ -1,0 +1,42 @@
+.root {
+  display: flex;
+  justify-content: space-between;
+  padding: size(80) size(80) size(137);
+  background-color: #1e293b;
+}
+
+.logo {
+  display: block;
+  width: size(111);
+  height: size(40);
+  margin-bottom: size(16);
+}
+
+.about {
+  width: size(416);
+  color: #cbd5e1;
+}
+
+.title {
+  margin-bottom: size(8);
+  color: #f1f5f9;
+}
+
+.link {
+  display: block;
+  margin-bottom: size(8);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &Txt {
+    color: #cbd5e1;
+  }
+}
+
+.socials {
+  width: size(296);
+  height: size(40);
+  margin-top: size(24);
+}

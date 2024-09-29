@@ -1,0 +1,90 @@
+.size {
+  &-subtext {
+    font-size: size(14);
+    font-weight: 500;
+    line-height: size(20);
+  }
+
+  &-h4 {
+    font-size: size(20);
+    font-weight: 600;
+    line-height: size(30);
+  }
+
+  &-h5 {
+    font-size: size(18);
+    font-weight: 600;
+    line-height: size(28.8);
+  }
+
+  &-btn-txt {
+    font-size: size(14);
+    font-weight: 500;
+    line-height: size(22.4);
+  }
+
+  &-sm-txt {
+    font-size: size(14);
+    font-weight: 400;
+    line-height: size(21);
+  }
+
+  &-p {
+    font-size: size(16);
+    font-weight: 400;
+    line-height: size(25.6);
+  }
+
+  &-label {
+    font-size: size(12);
+    font-weight: 600;
+    line-height: size(14.52);
+  }
+}
+
+.transform {
+  &-uppercase {
+    text-transform: uppercase;
+  }
+
+  &-capitalize {
+    text-transform: capitalize;
+  }
+
+  &-lowercase {
+    text-transform: lowercase;
+  }
+}
+
+.align {
+  &-left {
+    text-align: left;
+  }
+
+  &-right {
+    text-align: right;
+  }
+
+  &-center {
+    text-align: center;
+  }
+
+  &-justify {
+    text-align: justify;
+    text-align-last: justify;
+  }
+}
+
+.color {
+  &-black {
+    color: $black;
+  }
+
+  &-white {
+    color: $white;
+  }
+
+  &-darkBlue {
+    color: $darkBlue;
+  }
+}

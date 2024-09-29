@@ -1,0 +1,20 @@
+.root {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: size(83);
+  height: size(40);
+  margin-right: size(28);
+}
+
+.link {
+  margin-right: size(33);
+  color: $darkBlue;
+}
+
+.search {
+  margin-right: size(40);
+}

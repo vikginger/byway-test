@@ -1,0 +1,49 @@
+.root {
+  position: relative;
+}
+
+.title {
+  margin-bottom: size(16);
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.innerWrap {
+  display: flex;
+  align-items: center;
+}
+
+.txt {
+  margin-right: size(15);
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  height: size(48);
+  padding: 0 size(24);
+  border: 1px solid $black;
+  border-radius: size(8);
+
+  &Left {
+    margin-right: size(24);
+  }
+
+  &Icon {
+    width: size(24);
+    height: size(24);
+    color: $white;
+  }
+
+  &Txt {
+    margin-right: size(6);
+  }
+
+  &TxtRight {
+    margin-left: size(6);
+  }
+}

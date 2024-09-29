@@ -1,0 +1,141 @@
+.root {
+  border: 1px solid $lightGray;
+  border-radius: size(16);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: size(16);
+  border-bottom: 1px solid $lightGray;
+
+  &Wrap {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.back {
+  width: size(24);
+  height: size(24);
+}
+
+.img {
+  width: size(60);
+  height: size(60);
+  margin: 0 size(8);
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: size(24) size(16) size(28);
+  border-bottom: 1px solid $lightGray;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  height: size(31);
+  margin-bottom: size(24);
+  padding: 0 size(8);
+  border: 1px solid $lightGray;
+  border-radius: size(8);
+  background-color: #f1f5f9;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.msg {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  align-self: flex-end;
+  max-width: size(610);
+
+  &.incoming {
+    align-items: flex-start;
+    align-self: flex-start;
+  }
+
+  &Head {
+    display: flex;
+    align-items: center;
+    margin-bottom: size(8);
+
+    &.incoming {
+      margin-bottom: size(16);
+    }
+  }
+
+  &Img {
+    width: size(40);
+    height: size(40);
+    margin-right: size(8);
+  }
+}
+
+.time {
+  color: #64748b;
+}
+
+.txt {
+  color: $white;
+
+  &.incoming {
+    color: #000000;
+  }
+
+  &Box {
+    padding: size(8) size(16);
+    border-radius: size(8);
+    background-color: $black;
+
+    &.incoming {
+      background-color: #f1f5f9;
+    }
+  }
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: size(16);
+}
+
+.input {
+  width: size(811);
+  height: size(48);
+  padding: size(11) size(16);
+  border: 1px solid $lightGray;
+  border-radius: size(8);
+  outline: none;
+  background-color: $white;
+  font-size: size(16);
+  font-weight: 400;
+  line-height: size(25.6);
+  color: $darkBlue;
+
+  &::placeholder {
+    color: #94a3b8;
+  }
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  height: size(48);
+  border-radius: size(8);
+  background-color: #3b82f6;
+  padding: 0 size(24);
+
+  &Txt {
+    color: $white;
+  }
+}

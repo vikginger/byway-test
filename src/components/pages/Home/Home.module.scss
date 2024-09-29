@@ -1,0 +1,12 @@
+.wrap {
+  display: flex;
+  padding: size(40) size(80) size(204);
+}
+
+.profile {
+  margin-right: size(40);
+}
+
+.msgs {
+  flex-grow: 1;
+}

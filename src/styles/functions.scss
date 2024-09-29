@@ -1,0 +1,3 @@
+@function size($pixels) {
+  @return calc((#{$pixels} / var(--gfs)) * 1rem);
+}
