@@ -1,6 +1,8 @@
+import React, { useMemo } from 'react';
 import cx from 'classnames';
 
 import getTime from 'utils/getTime';
+import groupMessages from 'utils/groupMessages';
 
 import ArrowLeft from 'icons/arrow-left.svg';
 import Dots from 'icons/dots.svg';
@@ -13,6 +15,10 @@ import s from './Chat.module.scss';
 
 const Chat = ({ data, closeChat }) => {
   const { img, name, messages } = data;
+
+  const groupedMessages = useMemo(() => groupMessages(messages), [messages]);
+
+  console.log(groupedMessages);
 
   return (
     <div className={s.root}>
@@ -48,7 +54,7 @@ const Chat = ({ data, closeChat }) => {
           <Text size="label">Today</Text>
         </div>
         <div className={s.inner}>
-          {messages.map(msg => (
+          {groupedMessages.map(msg => (
             <div
               key={msg.id}
               className={cx(s.msg, { [s.incoming]: msg.sender !== 'Me' })}
@@ -66,6 +72,7 @@ const Chat = ({ data, closeChat }) => {
                     alt="image"
                   />
                 )}
+
                 <Text
                   className={s.time}
                   size="label"
@@ -73,18 +80,23 @@ const Chat = ({ data, closeChat }) => {
                   {getTime(msg.timestamp)}
                 </Text>
               </div>
-              <div
-                className={cx(s.txtBox, { [s.incoming]: msg.sender !== 'Me' })}
-              >
-                <Text
-                  size="p"
-                  className={cx(s.txt, {
+              {msg.messages.map(item => (
+                <div
+                  key={item.id}
+                  className={cx(s.txtBox, {
                     [s.incoming]: msg.sender !== 'Me',
                   })}
                 >
-                  {msg.text}
-                </Text>
-              </div>
+                  <Text
+                    size="p"
+                    className={cx(s.txt, {
+                      [s.incoming]: msg.sender !== 'Me',
+                    })}
+                  >
+                    {item.text}
+                  </Text>
+                </div>
+              ))}
             </div>
           ))}
         </div>

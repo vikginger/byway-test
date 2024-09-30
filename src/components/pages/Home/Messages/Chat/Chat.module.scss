@@ -58,6 +58,7 @@
   align-items: flex-end;
   align-self: flex-end;
   max-width: size(610);
+  margin-bottom: size(24);
 
   &.incoming {
     align-items: flex-start;
@@ -93,6 +94,7 @@
   }
 
   &Box {
+    margin-bottom: size(8);
     padding: size(8) size(16);
     border-radius: size(8);
     background-color: $black;
@@ -131,9 +133,9 @@
   display: flex;
   align-items: center;
   height: size(48);
+  padding: 0 size(24);
   border-radius: size(8);
   background-color: #3b82f6;
-  padding: 0 size(24);
 
   &Txt {
     color: $white;
